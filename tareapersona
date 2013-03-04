@@ -1,0 +1,33 @@
+using System;
+//Marco Saucedo
+namespace Application
+{
+  class persona 
+	{
+		public string nombre;
+		public string telefono;
+		public string email;
+		public string domicilio;
+		
+		public static void Main (string[] args) 
+		{
+			
+			persona persona = new persona ();
+			Console.WriteLine ("Escribe Tu Nombre: ");
+			persona.nombre = Console.ReadLine ();			
+			Console.WriteLine ("Escribe Tu Telefono");
+			persona.telefono = Console.ReadLine ();			
+			Console.WriteLine ("Escribe Tu Email");
+			persona.email = Console.ReadLine ();			
+			Console.WriteLine ("Escribe Tu Domicilio");
+			persona.domicilio = Console.ReadLine ();
+			Console.WriteLine ("Tus Datos");
+			Console.WriteLine ("Nombre: "+ persona.nombre);
+			Console.WriteLine ("Telefono: "+persona.telefono);
+			Console.WriteLine ("Emai: "+persona.email);
+			Console.WriteLine ("Domicilio: "+persona.domicilio);
+			Console.ReadLine();
+			
+		}
+	}
+}
